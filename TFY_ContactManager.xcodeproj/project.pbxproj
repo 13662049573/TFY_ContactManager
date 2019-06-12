@@ -27,6 +27,10 @@
 		3623605E22B0B969000FF75B /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623605C22B0B969000FF75B /* AddressBookViewController.m */; };
 		3623606122B0B9D2000FF75B /* ViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623606022B0B9D2000FF75B /* ViewTableViewCell.m */; };
 		3623606422B0CD7F000FF75B /* AddressBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623606322B0CD7F000FF75B /* AddressBookTableViewCell.m */; };
+		3623606622B0DAE0000FF75B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3623606522B0DAE0000FF75B /* Foundation.framework */; };
+		3623606822B0DAEE000FF75B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3623606722B0DAEE000FF75B /* UIKit.framework */; };
+		3623606B22B0DB10000FF75B /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3623606922B0DB10000FF75B /* Contacts.framework */; };
+		3623606C22B0DB10000FF75B /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3623606A22B0DB10000FF75B /* ContactsUI.framework */; };
 		68F0BA4998CF39F2536607E1 /* libPods-TFY_ContactManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 919C0427DFEC91E8831A3554 /* libPods-TFY_ContactManager.a */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +97,10 @@
 		3623606022B0B9D2000FF75B /* ViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTableViewCell.m; sourceTree = "<group>"; };
 		3623606222B0CD7F000FF75B /* AddressBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressBookTableViewCell.h; sourceTree = "<group>"; };
 		3623606322B0CD7F000FF75B /* AddressBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookTableViewCell.m; sourceTree = "<group>"; };
+		3623606522B0DAE0000FF75B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3623606722B0DAEE000FF75B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3623606922B0DB10000FF75B /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		3623606A22B0DB10000FF75B /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 		919C0427DFEC91E8831A3554 /* libPods-TFY_ContactManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFY_ContactManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,6 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3623606B22B0DB10000FF75B /* Contacts.framework in Frameworks */,
+				3623606C22B0DB10000FF75B /* ContactsUI.framework in Frameworks */,
+				3623606822B0DAEE000FF75B /* UIKit.framework in Frameworks */,
+				3623606622B0DAE0000FF75B /* Foundation.framework in Frameworks */,
 				68F0BA4998CF39F2536607E1 /* libPods-TFY_ContactManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +137,10 @@
 		1B8EF0E26AA4FC828C7DD264 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3623606922B0DB10000FF75B /* Contacts.framework */,
+				3623606A22B0DB10000FF75B /* ContactsUI.framework */,
+				3623606722B0DAEE000FF75B /* UIKit.framework */,
+				3623606522B0DAE0000FF75B /* Foundation.framework */,
 				919C0427DFEC91E8831A3554 /* libPods-TFY_ContactManager.a */,
 			);
 			name = Frameworks;
