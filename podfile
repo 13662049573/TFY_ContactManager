@@ -1,0 +1,14 @@
+platform :ios,'10.0'
+inhibit_all_warnings!
+target 'TFY_ContactManager' do
+pod 'ReactiveObjC'
+pod 'AFNetworking'
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'IQKeyboardManager'
+pod 'TFY_Category'
+pod 'TFY_Model'
+pod 'TFY_Navigation'
+pod 'TFY_SimplifytableViewKit'
+pod 'TFY_AutoLayout'
+end

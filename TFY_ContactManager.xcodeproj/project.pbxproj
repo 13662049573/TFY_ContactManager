@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36235FF622B0988D000FF75B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36235FF522B0988D000FF75B /* Assets.xcassets */; };
+		36235FF922B0988D000FF75B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36235FF722B0988D000FF75B /* LaunchScreen.storyboard */; };
+		36235FFC22B0988D000FF75B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36235FFB22B0988D000FF75B /* main.m */; };
+		3623600622B0988D000FF75B /* TFY_ContactManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623600522B0988D000FF75B /* TFY_ContactManagerTests.m */; };
+		3623601122B0988D000FF75B /* TFY_ContactManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623601022B0988D000FF75B /* TFY_ContactManagerUITests.m */; };
+		3623602422B09902000FF75B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623602022B09901000FF75B /* ViewController.m */; };
+		3623602522B09902000FF75B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623602122B09901000FF75B /* AppDelegate.m */; };
+		3623602922B099AD000FF75B /* TFY_PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623602822B099AD000FF75B /* TFY_PersonModel.m */; };
+		3623602C22B09CF9000FF75B /* NSString+TFY_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623602B22B09CF9000FF75B /* NSString+TFY_Extension.m */; };
+		3623602F22B09EE7000FF75B /* TFY_PickerDetailDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623602E22B09EE7000FF75B /* TFY_PickerDetailDelegate.m */; };
+		3623603222B09F77000FF75B /* TFY_PeoplePickerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623603122B09F77000FF75B /* TFY_PeoplePickerDelegate.m */; };
+		3623603522B0A021000FF75B /* TFY_ContactManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623603422B0A021000FF75B /* TFY_ContactManager.m */; };
+		3623604A22B0AD80000FF75B /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623604822B0AD80000FF75B /* BaseTableViewController.m */; };
+		3623605422B0B952000FF75B /* ContactTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623605222B0B952000FF75B /* ContactTableViewCell.m */; };
+		3623605522B0B952000FF75B /* SortAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623605322B0B952000FF75B /* SortAddressBookViewController.m */; };
+		3623605822B0B958000FF75B /* SelectPhoneNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623605622B0B958000FF75B /* SelectPhoneNumViewController.m */; };
+		3623605B22B0B960000FF75B /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623605A22B0B960000FF75B /* AddContactViewController.m */; };
+		3623605E22B0B969000FF75B /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623605C22B0B969000FF75B /* AddressBookViewController.m */; };
+		3623606122B0B9D2000FF75B /* ViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623606022B0B9D2000FF75B /* ViewTableViewCell.m */; };
+		3623606422B0CD7F000FF75B /* AddressBookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623606322B0CD7F000FF75B /* AddressBookTableViewCell.m */; };
+		68F0BA4998CF39F2536607E1 /* libPods-TFY_ContactManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 919C0427DFEC91E8831A3554 /* libPods-TFY_ContactManager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3623600222B0988D000FF75B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36235FE122B0988C000FF75B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36235FE822B0988C000FF75B;
+			remoteInfo = TFY_ContactManager;
+		};
+		3623600D22B0988D000FF75B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36235FE122B0988C000FF75B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36235FE822B0988C000FF75B;
+			remoteInfo = TFY_ContactManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24148D59F2F7089C170CFFFC /* Pods-TFY_ContactManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_ContactManager.release.xcconfig"; path = "Target Support Files/Pods-TFY_ContactManager/Pods-TFY_ContactManager.release.xcconfig"; sourceTree = "<group>"; };
+		249DF1E5DD76FD790F386B5F /* Pods-TFY_ContactManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFY_ContactManager.debug.xcconfig"; path = "Target Support Files/Pods-TFY_ContactManager/Pods-TFY_ContactManager.debug.xcconfig"; sourceTree = "<group>"; };
+		36235FE922B0988C000FF75B /* TFY_ContactManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFY_ContactManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36235FF522B0988D000FF75B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36235FF822B0988D000FF75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		36235FFA22B0988D000FF75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36235FFB22B0988D000FF75B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3623600122B0988D000FF75B /* TFY_ContactManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFY_ContactManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3623600522B0988D000FF75B /* TFY_ContactManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_ContactManagerTests.m; sourceTree = "<group>"; };
+		3623600722B0988D000FF75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3623600C22B0988D000FF75B /* TFY_ContactManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TFY_ContactManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3623601022B0988D000FF75B /* TFY_ContactManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_ContactManagerUITests.m; sourceTree = "<group>"; };
+		3623601222B0988D000FF75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3623601F22B09901000FF75B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3623602022B09901000FF75B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3623602122B09901000FF75B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3623602222B09901000FF75B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3623602622B0995E000FF75B /* TFY_ContactHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_ContactHeader.h; sourceTree = "<group>"; };
+		3623602722B099AD000FF75B /* TFY_PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_PersonModel.h; sourceTree = "<group>"; };
+		3623602822B099AD000FF75B /* TFY_PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_PersonModel.m; sourceTree = "<group>"; };
+		3623602A22B09CF9000FF75B /* NSString+TFY_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TFY_Extension.h"; sourceTree = "<group>"; };
+		3623602B22B09CF9000FF75B /* NSString+TFY_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TFY_Extension.m"; sourceTree = "<group>"; };
+		3623602D22B09EE7000FF75B /* TFY_PickerDetailDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_PickerDetailDelegate.h; sourceTree = "<group>"; };
+		3623602E22B09EE7000FF75B /* TFY_PickerDetailDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_PickerDetailDelegate.m; sourceTree = "<group>"; };
+		3623603022B09F77000FF75B /* TFY_PeoplePickerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_PeoplePickerDelegate.h; sourceTree = "<group>"; };
+		3623603122B09F77000FF75B /* TFY_PeoplePickerDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_PeoplePickerDelegate.m; sourceTree = "<group>"; };
+		3623603322B0A021000FF75B /* TFY_ContactManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_ContactManager.h; sourceTree = "<group>"; };
+		3623603422B0A021000FF75B /* TFY_ContactManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_ContactManager.m; sourceTree = "<group>"; };
+		3623604622B0AC4B000FF75B /* TFY_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_PrefixHeader.pch; sourceTree = "<group>"; };
+		3623604822B0AD80000FF75B /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		3623604922B0AD80000FF75B /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		3623605022B0B952000FF75B /* SortAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortAddressBookViewController.h; sourceTree = "<group>"; };
+		3623605122B0B952000FF75B /* ContactTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactTableViewCell.h; sourceTree = "<group>"; };
+		3623605222B0B952000FF75B /* ContactTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactTableViewCell.m; sourceTree = "<group>"; };
+		3623605322B0B952000FF75B /* SortAddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortAddressBookViewController.m; sourceTree = "<group>"; };
+		3623605622B0B958000FF75B /* SelectPhoneNumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhoneNumViewController.m; sourceTree = "<group>"; };
+		3623605722B0B958000FF75B /* SelectPhoneNumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhoneNumViewController.h; sourceTree = "<group>"; };
+		3623605922B0B960000FF75B /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		3623605A22B0B960000FF75B /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		3623605C22B0B969000FF75B /* AddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
+		3623605D22B0B969000FF75B /* AddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
+		3623605F22B0B9D2000FF75B /* ViewTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewTableViewCell.h; sourceTree = "<group>"; };
+		3623606022B0B9D2000FF75B /* ViewTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewTableViewCell.m; sourceTree = "<group>"; };
+		3623606222B0CD7F000FF75B /* AddressBookTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressBookTableViewCell.h; sourceTree = "<group>"; };
+		3623606322B0CD7F000FF75B /* AddressBookTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookTableViewCell.m; sourceTree = "<group>"; };
+		919C0427DFEC91E8831A3554 /* libPods-TFY_ContactManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFY_ContactManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36235FE622B0988C000FF75B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F0BA4998CF39F2536607E1 /* libPods-TFY_ContactManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36235FFE22B0988D000FF75B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3623600922B0988D000FF75B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B8EF0E26AA4FC828C7DD264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				919C0427DFEC91E8831A3554 /* libPods-TFY_ContactManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36235FE022B0988C000FF75B = {
+			isa = PBXGroup;
+			children = (
+				36235FEB22B0988C000FF75B /* TFY_ContactManager */,
+				3623600422B0988D000FF75B /* TFY_ContactManagerTests */,
+				3623600F22B0988D000FF75B /* TFY_ContactManagerUITests */,
+				36235FEA22B0988C000FF75B /* Products */,
+				E5F819A1C2A8572FCC80C023 /* Pods */,
+				1B8EF0E26AA4FC828C7DD264 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		36235FEA22B0988C000FF75B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36235FE922B0988C000FF75B /* TFY_ContactManager.app */,
+				3623600122B0988D000FF75B /* TFY_ContactManagerTests.xctest */,
+				3623600C22B0988D000FF75B /* TFY_ContactManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36235FEB22B0988C000FF75B /* TFY_ContactManager */ = {
+			isa = PBXGroup;
+			children = (
+				3623604B22B0B8C9000FF75B /* Class */,
+				3623604722B0AD80000FF75B /* BaseController */,
+				3623604522B0AC3B000FF75B /* PCH */,
+				3623601E22B09901000FF75B /* AppDelegate */,
+				3623602322B09902000FF75B /* TFY_ContactManager */,
+				36235FF522B0988D000FF75B /* Assets.xcassets */,
+				36235FF722B0988D000FF75B /* LaunchScreen.storyboard */,
+				36235FFA22B0988D000FF75B /* Info.plist */,
+				36235FFB22B0988D000FF75B /* main.m */,
+			);
+			path = TFY_ContactManager;
+			sourceTree = "<group>";
+		};
+		3623600422B0988D000FF75B /* TFY_ContactManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3623600522B0988D000FF75B /* TFY_ContactManagerTests.m */,
+				3623600722B0988D000FF75B /* Info.plist */,
+			);
+			path = TFY_ContactManagerTests;
+			sourceTree = "<group>";
+		};
+		3623600F22B0988D000FF75B /* TFY_ContactManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3623601022B0988D000FF75B /* TFY_ContactManagerUITests.m */,
+				3623601222B0988D000FF75B /* Info.plist */,
+			);
+			path = TFY_ContactManagerUITests;
+			sourceTree = "<group>";
+		};
+		3623601E22B09901000FF75B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3623601F22B09901000FF75B /* AppDelegate.h */,
+				3623602122B09901000FF75B /* AppDelegate.m */,
+				3623602222B09901000FF75B /* ViewController.h */,
+				3623602022B09901000FF75B /* ViewController.m */,
+				3623605F22B0B9D2000FF75B /* ViewTableViewCell.h */,
+				3623606022B0B9D2000FF75B /* ViewTableViewCell.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3623602322B09902000FF75B /* TFY_ContactManager */ = {
+			isa = PBXGroup;
+			children = (
+				3623602622B0995E000FF75B /* TFY_ContactHeader.h */,
+				3623602722B099AD000FF75B /* TFY_PersonModel.h */,
+				3623602822B099AD000FF75B /* TFY_PersonModel.m */,
+				3623602A22B09CF9000FF75B /* NSString+TFY_Extension.h */,
+				3623602B22B09CF9000FF75B /* NSString+TFY_Extension.m */,
+				3623602D22B09EE7000FF75B /* TFY_PickerDetailDelegate.h */,
+				3623602E22B09EE7000FF75B /* TFY_PickerDetailDelegate.m */,
+				3623603022B09F77000FF75B /* TFY_PeoplePickerDelegate.h */,
+				3623603122B09F77000FF75B /* TFY_PeoplePickerDelegate.m */,
+				3623603322B0A021000FF75B /* TFY_ContactManager.h */,
+				3623603422B0A021000FF75B /* TFY_ContactManager.m */,
+			);
+			path = TFY_ContactManager;
+			sourceTree = "<group>";
+		};
+		3623604522B0AC3B000FF75B /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				3623604622B0AC4B000FF75B /* TFY_PrefixHeader.pch */,
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
+		3623604722B0AD80000FF75B /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				3623604922B0AD80000FF75B /* BaseTableViewController.h */,
+				3623604822B0AD80000FF75B /* BaseTableViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		3623604B22B0B8C9000FF75B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				3623604C22B0B8C9000FF75B /* SortAddressBook */,
+				3623604D22B0B8C9000FF75B /* SelectPhoneController */,
+				3623604E22B0B8C9000FF75B /* AddContact */,
+				3623604F22B0B8C9000FF75B /* AddressBook */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		3623604C22B0B8C9000FF75B /* SortAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				3623605122B0B952000FF75B /* ContactTableViewCell.h */,
+				3623605222B0B952000FF75B /* ContactTableViewCell.m */,
+				3623605022B0B952000FF75B /* SortAddressBookViewController.h */,
+				3623605322B0B952000FF75B /* SortAddressBookViewController.m */,
+			);
+			path = SortAddressBook;
+			sourceTree = "<group>";
+		};
+		3623604D22B0B8C9000FF75B /* SelectPhoneController */ = {
+			isa = PBXGroup;
+			children = (
+				3623605722B0B958000FF75B /* SelectPhoneNumViewController.h */,
+				3623605622B0B958000FF75B /* SelectPhoneNumViewController.m */,
+			);
+			path = SelectPhoneController;
+			sourceTree = "<group>";
+		};
+		3623604E22B0B8C9000FF75B /* AddContact */ = {
+			isa = PBXGroup;
+			children = (
+				3623605922B0B960000FF75B /* AddContactViewController.h */,
+				3623605A22B0B960000FF75B /* AddContactViewController.m */,
+			);
+			path = AddContact;
+			sourceTree = "<group>";
+		};
+		3623604F22B0B8C9000FF75B /* AddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				3623605D22B0B969000FF75B /* AddressBookViewController.h */,
+				3623605C22B0B969000FF75B /* AddressBookViewController.m */,
+				3623606222B0CD7F000FF75B /* AddressBookTableViewCell.h */,
+				3623606322B0CD7F000FF75B /* AddressBookTableViewCell.m */,
+			);
+			path = AddressBook;
+			sourceTree = "<group>";
+		};
+		E5F819A1C2A8572FCC80C023 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				249DF1E5DD76FD790F386B5F /* Pods-TFY_ContactManager.debug.xcconfig */,
+				24148D59F2F7089C170CFFFC /* Pods-TFY_ContactManager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36235FE822B0988C000FF75B /* TFY_ContactManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3623601522B0988D000FF75B /* Build configuration list for PBXNativeTarget "TFY_ContactManager" */;
+			buildPhases = (
+				C3E63AC0CA01A6541C3F16FC /* [CP] Check Pods Manifest.lock */,
+				36235FE522B0988C000FF75B /* Sources */,
+				36235FE622B0988C000FF75B /* Frameworks */,
+				36235FE722B0988C000FF75B /* Resources */,
+				50ECF8EA7343CFD9AFF70E0A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFY_ContactManager;
+			productName = TFY_ContactManager;
+			productReference = 36235FE922B0988C000FF75B /* TFY_ContactManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3623600022B0988D000FF75B /* TFY_ContactManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3623601822B0988D000FF75B /* Build configuration list for PBXNativeTarget "TFY_ContactManagerTests" */;
+			buildPhases = (
+				36235FFD22B0988D000FF75B /* Sources */,
+				36235FFE22B0988D000FF75B /* Frameworks */,
+				36235FFF22B0988D000FF75B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3623600322B0988D000FF75B /* PBXTargetDependency */,
+			);
+			name = TFY_ContactManagerTests;
+			productName = TFY_ContactManagerTests;
+			productReference = 3623600122B0988D000FF75B /* TFY_ContactManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3623600B22B0988D000FF75B /* TFY_ContactManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3623601B22B0988D000FF75B /* Build configuration list for PBXNativeTarget "TFY_ContactManagerUITests" */;
+			buildPhases = (
+				3623600822B0988D000FF75B /* Sources */,
+				3623600922B0988D000FF75B /* Frameworks */,
+				3623600A22B0988D000FF75B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3623600E22B0988D000FF75B /* PBXTargetDependency */,
+			);
+			name = TFY_ContactManagerUITests;
+			productName = TFY_ContactManagerUITests;
+			productReference = 3623600C22B0988D000FF75B /* TFY_ContactManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36235FE122B0988C000FF75B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "田风有";
+				TargetAttributes = {
+					36235FE822B0988C000FF75B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					3623600022B0988D000FF75B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 36235FE822B0988C000FF75B;
+					};
+					3623600B22B0988D000FF75B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 36235FE822B0988C000FF75B;
+					};
+				};
+			};
+			buildConfigurationList = 36235FE422B0988C000FF75B /* Build configuration list for PBXProject "TFY_ContactManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36235FE022B0988C000FF75B;
+			productRefGroup = 36235FEA22B0988C000FF75B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36235FE822B0988C000FF75B /* TFY_ContactManager */,
+				3623600022B0988D000FF75B /* TFY_ContactManagerTests */,
+				3623600B22B0988D000FF75B /* TFY_ContactManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36235FE722B0988C000FF75B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36235FF922B0988D000FF75B /* LaunchScreen.storyboard in Resources */,
+				36235FF622B0988D000FF75B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36235FFF22B0988D000FF75B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3623600A22B0988D000FF75B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50ECF8EA7343CFD9AFF70E0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFY_ContactManager/Pods-TFY_ContactManager-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TFY_ContactManager/Pods-TFY_ContactManager-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TFY_ContactManager/Pods-TFY_ContactManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3E63AC0CA01A6541C3F16FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TFY_ContactManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36235FE522B0988C000FF75B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3623603522B0A021000FF75B /* TFY_ContactManager.m in Sources */,
+				3623602422B09902000FF75B /* ViewController.m in Sources */,
+				3623605822B0B958000FF75B /* SelectPhoneNumViewController.m in Sources */,
+				3623605422B0B952000FF75B /* ContactTableViewCell.m in Sources */,
+				3623602F22B09EE7000FF75B /* TFY_PickerDetailDelegate.m in Sources */,
+				36235FFC22B0988D000FF75B /* main.m in Sources */,
+				3623605E22B0B969000FF75B /* AddressBookViewController.m in Sources */,
+				3623602C22B09CF9000FF75B /* NSString+TFY_Extension.m in Sources */,
+				3623606122B0B9D2000FF75B /* ViewTableViewCell.m in Sources */,
+				3623606422B0CD7F000FF75B /* AddressBookTableViewCell.m in Sources */,
+				3623602922B099AD000FF75B /* TFY_PersonModel.m in Sources */,
+				3623603222B09F77000FF75B /* TFY_PeoplePickerDelegate.m in Sources */,
+				3623604A22B0AD80000FF75B /* BaseTableViewController.m in Sources */,
+				3623602522B09902000FF75B /* AppDelegate.m in Sources */,
+				3623605522B0B952000FF75B /* SortAddressBookViewController.m in Sources */,
+				3623605B22B0B960000FF75B /* AddContactViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36235FFD22B0988D000FF75B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3623600622B0988D000FF75B /* TFY_ContactManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3623600822B0988D000FF75B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3623601122B0988D000FF75B /* TFY_ContactManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3623600322B0988D000FF75B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36235FE822B0988C000FF75B /* TFY_ContactManager */;
+			targetProxy = 3623600222B0988D000FF75B /* PBXContainerItemProxy */;
+		};
+		3623600E22B0988D000FF75B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36235FE822B0988C000FF75B /* TFY_ContactManager */;
+			targetProxy = 3623600D22B0988D000FF75B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		36235FF722B0988D000FF75B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				36235FF822B0988D000FF75B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3623601322B0988D000FF75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3623601422B0988D000FF75B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3623601622B0988D000FF75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 249DF1E5DD76FD790F386B5F /* Pods-TFY_ContactManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TFY_ContactManager/PCH/TFY_PrefixHeader.pch;
+				INFOPLIST_FILE = TFY_ContactManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-ContactManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3623601722B0988D000FF75B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24148D59F2F7089C170CFFFC /* Pods-TFY_ContactManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TFY_ContactManager/PCH/TFY_PrefixHeader.pch;
+				INFOPLIST_FILE = TFY_ContactManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-ContactManager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3623601922B0988D000FF75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				INFOPLIST_FILE = TFY_ContactManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-ContactManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFY_ContactManager.app/TFY_ContactManager";
+			};
+			name = Debug;
+		};
+		3623601A22B0988D000FF75B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				INFOPLIST_FILE = TFY_ContactManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-ContactManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFY_ContactManager.app/TFY_ContactManager";
+			};
+			name = Release;
+		};
+		3623601C22B0988D000FF75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				INFOPLIST_FILE = TFY_ContactManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-ContactManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFY_ContactManager;
+			};
+			name = Debug;
+		};
+		3623601D22B0988D000FF75B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SEXG86U92J;
+				INFOPLIST_FILE = TFY_ContactManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LianQianLianjiCompany.TFY-ContactManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TFY_ContactManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36235FE422B0988C000FF75B /* Build configuration list for PBXProject "TFY_ContactManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623601322B0988D000FF75B /* Debug */,
+				3623601422B0988D000FF75B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3623601522B0988D000FF75B /* Build configuration list for PBXNativeTarget "TFY_ContactManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623601622B0988D000FF75B /* Debug */,
+				3623601722B0988D000FF75B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3623601822B0988D000FF75B /* Build configuration list for PBXNativeTarget "TFY_ContactManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623601922B0988D000FF75B /* Debug */,
+				3623601A22B0988D000FF75B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3623601B22B0988D000FF75B /* Build configuration list for PBXNativeTarget "TFY_ContactManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3623601C22B0988D000FF75B /* Debug */,
+				3623601D22B0988D000FF75B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36235FE122B0988C000FF75B /* Project object */;
+}
