@@ -16,10 +16,9 @@
 #import <MJRefresh.h>
 #import <ReactiveObjC.h>
 #import <UIImageView+WebCache.h>
-#import <TFY_TableViewHeader.h>
+#import <TFY_SimplifytableHeader.h>
 #import <TFY_Navigation.h>
 #import <TFY_ModelSqlite.h>
-#import <TFY_CategoryHerder.h>
 #import <TFY_CategoryHerder.h>
 #import <TFY_AutoLayout.h>
 

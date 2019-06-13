@@ -30,7 +30,7 @@ PODS:
   - TFY_Model (2.6.0):
     - SQLCipher
   - TFY_Navigation (2.1.0)
-  - TFY_SimplifytableViewKit (2.0.7)
+  - TFY_SimplifytableViewKit (2.1.4)
 
 DEPENDENCIES:
   - AFNetworking
@@ -69,7 +69,7 @@ SPEC CHECKSUMS:
   TFY_Category: 151af6337aee2d2f2712b229502d20902ecad165
   TFY_Model: b383de0a1762d2bd3abe56c26a8951f7c8098400
   TFY_Navigation: 7e6c6eeb8f318233bf88fab31181e5408e4c04fb
-  TFY_SimplifytableViewKit: 0793a069b130daad1d144d182da9bddef3d42ed3
+  TFY_SimplifytableViewKit: 6cb8041d11077228028f5440b6e79aa4714e1a53
 
 PODFILE CHECKSUM: 6bbec08d2d8b8433adc1b73fda55a7c8be50bb29
 

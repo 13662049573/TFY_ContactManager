@@ -113,7 +113,7 @@ typedef void (^CellEventBlock)(UITableView *tableView, NSIndexPath * _Nonnull in
  */
 - (TFY_CellMaker * (^)(id))tfy_data;
 /**
- *  cell 同tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 这个方法
+ *  cell 同tableView:__kindof UITableViewCell *cell, id data, NSIndexPath * _Nonnull indexPath 这个方法
  */
 - (TFY_CellMaker * (^)(CellAdapterBlock))tfy_adapter;
 /**
@@ -121,7 +121,7 @@ typedef void (^CellEventBlock)(UITableView *tableView, NSIndexPath * _Nonnull in
  */
 - (TFY_CellMaker * (^)(CellEventBlock))tfy_event;
 /**
- *  cell 同tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 这个方法
+ *  cell 同tableView:(UITableView *tableView, NSIndexPath * _Nonnull indexPath, id data); 这个方法
  */
 - (TFY_CellMaker * (^)(Class,CellAdapterBlock))tfy_cellClassAndAdapter;
 
@@ -129,7 +129,7 @@ typedef void (^CellEventBlock)(UITableView *tableView, NSIndexPath * _Nonnull in
 @end
 
 /**
- *   数据赋值block
+ *  数据赋值block
  */
 typedef  NSArray * _Nonnull (^GetDataBlock)(void);
 /**
@@ -161,11 +161,11 @@ typedef void (^CellMakeBlock)(TFY_CellMaker * _Nonnull cellMaker);
 /**
  *  header 头文件字符串
  */
-@property(nonatomic, strong) NSString * headerTitle;
+@property(nonatomic, copy) NSString * headerTitle;
 /**
  *  footer 头文件字符串
  */
-@property(nonatomic, strong) NSString * footerTitle;
+@property(nonatomic, copy) NSString * footerTitle;
 /**
  *  header 高度
  */
@@ -305,6 +305,10 @@ typedef void (^SectionMakeBlock)(TFY_SectionMaker * sectionMaker);
  *   行数回调block
  */
 typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
+/**
+ *  搜索引擎数组block
+ */
+typedef NSArray<NSString *> *_Nonnull(^sectionIndexBlock)(UITableView *tableView);
 
 @interface TFY_TableData : NSObject
 /**
@@ -336,6 +340,10 @@ typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
  */
 @property (nonatomic, strong) NSArray *dataArr;
 /**
+ *  搜索所需数组
+ */
+@property (nonatomic, strong) NSArray<NSString *> *sectionIndexArr;
+/**
  *  行高
  */
 @property (nonatomic, assign) CGFloat rowHeight;
@@ -347,6 +355,10 @@ typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
  *  组回调
  */
 @property (nonatomic, copy)  SectionCountBlock sectionCountBlock;
+/**
+ *  搜索BLock
+ */
+@property(nonatomic, copy) sectionIndexBlock sectionIndexBlock;
 /**
  *  字典数据
  */
@@ -383,6 +395,10 @@ typedef NSUInteger (^SectionCountBlock)(UITableView *tableView);
  *  组行数回调
  */
 - (TFY_TableViewMaker * (^)(NSInteger))tfy_sectionCount;
+/**
+ *  搜索所需数组
+ */
+- (TFY_TableViewMaker * (^)(NSArray<NSString *> *))tfy_sectionIndexArr;
 /**
  *  组行数回调
  */

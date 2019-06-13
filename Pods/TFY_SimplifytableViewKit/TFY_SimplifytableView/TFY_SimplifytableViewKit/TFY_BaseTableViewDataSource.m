@@ -344,6 +344,7 @@
 
 @implementation TFY_TableData
 @synthesize sectionCount = _sectionCount;
+@synthesize sectionIndexArr = _sectionIndexArr;
 
 -(instancetype)initWithTableView:(UITableView *)tableView{
     self = [super init];
@@ -375,6 +376,18 @@
         _sectionDatas = [NSMutableArray array];
     }
     return _sectionDatas;
+}
+
+-(NSArray<NSString *> *)sectionIndexArr{
+    if (self.sectionIndexBlock) {
+        [self setSectionIndexArr:self.sectionIndexBlock(self.tableView)];
+    }
+    return _sectionIndexArr;
+}
+
+
+-(void)setSectionIndexArr:(NSArray<NSString *> *)sectionIndexArr{
+    _sectionIndexArr = sectionIndexArr;
 }
 
 -(void)setSectionMakeBlock:(SectionMakeBlock)sectionMakeBlock{
@@ -482,6 +495,13 @@
     };
 }
 
+- (TFY_TableViewMaker * (^)(NSArray<NSString *> *))tfy_sectionIndexArr{
+    return ^TFY_TableViewMaker *(NSArray<NSString *> *sectionIndexArr){
+        self.tableData.sectionIndexArr = sectionIndexArr;
+        return self;
+    };
+}
+
 - (TFY_TableViewMaker * (^)(SectionCountBlock))tfy_sectionCountBk{
     return ^TFY_TableViewMaker *(SectionCountBlock sectionCountBlock){
         self.tableData.sectionCountBlock = sectionCountBlock;
@@ -582,6 +602,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     return self.tableData.sectionDatas[(NSUInteger) section].footerHeight;
+}
+
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+    return self.tableData.sectionIndexArr;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
