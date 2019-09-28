@@ -21,7 +21,7 @@ PODS:
     - SDWebImage/Core (= 5.2.0)
   - SDWebImage/Core (5.2.0)
   - TFY_AutoLayout (2.4.7)
-  - TFY_Category (2.5.8)
+  - TFY_Category (2.6.0)
   - TFY_Model (2.6.4)
   - TFY_Navigation (2.1.0)
   - TFY_SimplifytableViewKit (2.1.4)
@@ -58,7 +58,7 @@ SPEC CHECKSUMS:
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 609192dcf3898c910a2848032372ead951e66364
   TFY_AutoLayout: 3856cd8766f67cd8aeca980281d630e28cdbfd12
-  TFY_Category: 4b33efa7653d0209695f9b49762a1aaf4599f17d
+  TFY_Category: 8af04bd801b0753c547e1d8db15826a94d9cd570
   TFY_Model: 0edfcd6fc0a026be792fa51e42ca638d6f07655e
   TFY_Navigation: 7e6c6eeb8f318233bf88fab31181e5408e4c04fb
   TFY_SimplifytableViewKit: 6cb8041d11077228028f5440b6e79aa4714e1a53
