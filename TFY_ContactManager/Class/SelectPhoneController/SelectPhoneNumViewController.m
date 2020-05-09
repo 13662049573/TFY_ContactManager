@@ -38,7 +38,7 @@
 -(UIButton *)button{
     if (!_button) {
         _button = tfy_button();
-        _button.tfy_title(@"选择指定人", @"3D4453", 16).tfy_action(self, @selector(btnClick)).tfy_backgroundColor(@"FAE158", 1).tfy_cornerRadius(10);
+        _button.tfy_title(@"选择指定人",UIControlStateNormal, @"3D4453",UIControlStateNormal, [UIFont systemFontOfSize:16]).tfy_action(self, @selector(btnClick),UIControlEventTouchUpInside).tfy_backgroundColor(@"FAE158", 1).tfy_cornerRadius(10);
     }
     return _button;
 }
@@ -46,7 +46,7 @@
 -(UILabel *)name_label{
     if (!_name_label) {
         _name_label = tfy_label();
-        _name_label.tfy_textcolor(@"3D4453", 1).tfy_fontSize(14).tfy_alignment(1).tfy_borders(1, @"5395DB");
+        _name_label.tfy_textcolor(@"3D4453", 1).tfy_fontSize([UIFont systemFontOfSize:14]).tfy_alignment(1).tfy_borders(1, @"5395DB");
     }
     return _name_label;
 }
@@ -54,7 +54,7 @@
 -(UILabel *)phone_label{
     if (!_phone_label) {
         _phone_label = tfy_label();
-        _phone_label.tfy_textcolor(@"3D4453", 1).tfy_fontSize(14).tfy_alignment(1).tfy_borders(1, @"5395DB");
+        _phone_label.tfy_textcolor(@"3D4453", 1).tfy_fontSize([UIFont systemFontOfSize:14]).tfy_alignment(1).tfy_borders(1, @"5395DB");
     }
     return _phone_label;
 }

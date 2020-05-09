@@ -1,0 +1,1 @@
+../../../SDWebImage/SDWebImage/Core/SDAnimatedImageView+WebCache 3.h

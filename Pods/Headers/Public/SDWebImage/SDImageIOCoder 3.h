@@ -1,0 +1,1 @@
+../../../SDWebImage/SDWebImage/Core/SDImageIOCoder 3.h

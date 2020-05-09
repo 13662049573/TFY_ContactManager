@@ -1,0 +1,1 @@
+../../../SDWebImage/SDWebImage/Core/UIImage+MemoryCacheCost 3.h

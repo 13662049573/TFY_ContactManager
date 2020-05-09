@@ -1,0 +1,1 @@
+../../../SDWebImage/SDWebImage/Core/NSImage+Compatibility 3.h
