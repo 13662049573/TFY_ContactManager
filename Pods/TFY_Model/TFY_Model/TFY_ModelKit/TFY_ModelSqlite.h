@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+#pragma ******************************************  数据库模型处理类   ******************************************
+
 
 @protocol TFY_ModelSqlite <NSObject>
 @optional

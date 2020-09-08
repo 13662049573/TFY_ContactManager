@@ -1,1 +1,0 @@
-../../../SDWebImage/SDWebImage/Core/SDImageTransformer 2.h

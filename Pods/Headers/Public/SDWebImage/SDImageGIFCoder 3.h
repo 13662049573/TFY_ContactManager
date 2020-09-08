@@ -1,1 +1,0 @@
-../../../SDWebImage/SDWebImage/Core/SDImageGIFCoder 3.h

@@ -1,1 +1,0 @@
-../../../SDWebImage/SDWebImage/Core/SDImageCachesManager 3.h

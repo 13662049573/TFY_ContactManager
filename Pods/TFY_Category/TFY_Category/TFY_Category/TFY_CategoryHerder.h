@@ -4,7 +4,7 @@
 //
 //  Created by 田风有 on 2019/4/30.
 //  Copyright © 2019 恋机科技. All rights reserved.
-//  https://github.com/13662049573/TFY_AutoLayoutModelTools
+//  最新版本号:3.5.8
 
 #ifndef TFY_CategoryHerder_h
 #define TFY_CategoryHerder_h
@@ -15,5 +15,8 @@
 #import "TFY_FoundationHeader.h"
 //ITools头文件
 #import "TFY_IToolsHeader.h"
+//定义的一些宏
+#import "TFY_CategoryType.h"
 
 #endif /* TFY_CategoryHerder_h */
+

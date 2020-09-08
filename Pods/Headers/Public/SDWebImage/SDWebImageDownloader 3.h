@@ -1,1 +1,0 @@
-../../../SDWebImage/SDWebImage/Core/SDWebImageDownloader 3.h

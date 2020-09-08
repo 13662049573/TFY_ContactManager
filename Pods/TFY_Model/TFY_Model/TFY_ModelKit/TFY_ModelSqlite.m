@@ -17,6 +17,8 @@
 #import <sqlite3.h>
 #endif
 
+#pragma ******************************************  数据库模型处理类   ******************************************
+
 static const NSString * TFY_String            = @"TEXT";
 static const NSString * TFY_Int               = @"INTERGER";
 static const NSString * TFY_Boolean           = @"INTERGER";
@@ -1247,7 +1249,7 @@ static sqlite3 * _tfy_database;
 }
 
 + (NSArray *)query:(Class)model_class {
-    return [self query:model_class where:nil];
+    return [self query:model_class where:@""];
 }
 
 + (NSArray *)query:(Class)model_class where:(NSString *)where {
@@ -1304,7 +1306,7 @@ static sqlite3 * _tfy_database;
 }
 
 + (id)query:(Class)model_class func:(NSString *)func {
-    return [self query:model_class func:func condition:nil];
+    return [self query:model_class func:func condition:@""];
 }
 
 + (id)query:(Class)model_class func:(NSString *)func condition:(NSString *)condition {
@@ -1596,7 +1598,7 @@ static sqlite3 * _tfy_database;
 }
 
 + (BOOL)clear:(Class)model_class {
-    return [self deletes:model_class where:nil];
+    return [self deletes:model_class where:@""];
 }
 
 + (BOOL)commonDeleteModel:(Class)model_class where:(NSString *)where {
@@ -1719,3 +1721,4 @@ static sqlite3 * _tfy_database;
 }
 
 @end
+

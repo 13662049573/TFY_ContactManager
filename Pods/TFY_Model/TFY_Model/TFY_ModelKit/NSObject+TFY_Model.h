@@ -4,9 +4,11 @@
 //
 //  Created by 田风有 on 2019/4/25.
 //  Copyright © 2019 田风有. All rights reserved.
-//  下载地址：https://github.com/13662049573/TFY_Model.git
+//
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 /**
  *  模型对象归档解归档实现
  */
@@ -24,7 +26,6 @@ return self; \
 [self tfy_Encode:encoder]; \
 }\
 -(id)copyWithZone:(NSZone *)zone{return [self tfy_Copy];}
-
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -47,7 +48,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (TFY_Model) <TFY_ModelKeyValue>
 
-#pragma mark-json转模型对象 Api
 /**
  *  字典转模型数据
  */
@@ -89,5 +89,6 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)tfy_Decode:(NSCoder *)aDecoder;
 
 @end
+
 
 NS_ASSUME_NONNULL_END
