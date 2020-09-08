@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name          = "TFY_ContactManager"
 
-  spec.version       = "2.0.2"
+  spec.version       = "2.0.4"
   
   spec.summary       = "只支持ios9以上的通讯录的封装"
 
