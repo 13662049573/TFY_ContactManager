@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 
   spec.name          = "TFY_ContactManager"
 
-  spec.version       = "2.0.4"
+  spec.version       = "2.0.6"
   
   spec.summary       = "只支持ios9以上的通讯录的封装"
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
 
   spec.source        = { :git => "https://github.com/13662049573/TFY_ContactManager.git", :tag => spec.version }
 
-  spec.source_files  = "TFY_ContactManager/TFY_ContactManager/**/*.{h,m}","TFY_ContactManager/TFY_ContactManager/TFY_ContactHeader.h"
+  spec.source_files  = "TFY_ContactManager/TFY_ContactManager/**/*.{h,m}"
   
   spec.frameworks    = "Foundation","UIKit"
 
