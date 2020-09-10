@@ -69,7 +69,6 @@
 		3623602022B09901000FF75B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3623602122B09901000FF75B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3623602222B09901000FF75B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3623602622B0995E000FF75B /* TFY_ContactHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_ContactHeader.h; sourceTree = "<group>"; };
 		3623602722B099AD000FF75B /* TFY_PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_PersonModel.h; sourceTree = "<group>"; };
 		3623602822B099AD000FF75B /* TFY_PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFY_PersonModel.m; sourceTree = "<group>"; };
 		3623602A22B09CF9000FF75B /* NSString+TFY_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TFY_Extension.h"; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		3623606722B0DAEE000FF75B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3623606922B0DB10000FF75B /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		3623606A22B0DB10000FF75B /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		36EE10FE250A154700D24B3C /* TFY_ContactManagerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFY_ContactManagerKit.h; sourceTree = "<group>"; };
 		919C0427DFEC91E8831A3554 /* libPods-TFY_ContactManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TFY_ContactManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -218,7 +218,7 @@
 		3623602322B09902000FF75B /* TFY_ContactManager */ = {
 			isa = PBXGroup;
 			children = (
-				3623602622B0995E000FF75B /* TFY_ContactHeader.h */,
+				36EE10FE250A154700D24B3C /* TFY_ContactManagerKit.h */,
 				3623602722B099AD000FF75B /* TFY_PersonModel.h */,
 				3623602822B099AD000FF75B /* TFY_PersonModel.m */,
 				3623602A22B09CF9000FF75B /* NSString+TFY_Extension.h */,

@@ -9,7 +9,7 @@
 #ifndef TFY_PrefixHeader_pch
 #define TFY_PrefixHeader_pch
 
-#import "TFY_ContactHeader.h"
+#import "TFY_ContactManagerKit.h"
 
 #import <AFNetworking.h>
 #import <IQKeyboardManager.h>
