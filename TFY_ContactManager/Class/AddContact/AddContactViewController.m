@@ -38,7 +38,9 @@
 
 -(UIImageView *)login_imageView{
     if (!_login_imageView) {
-        _login_imageView = tfy_imageView().tfy_imge(@"guanyu copy");
+        _login_imageView = UIImageViewSet();
+        _login_imageView.makeChain
+        .image([UIImage imageNamed:@"guanyu copy"]);
     }
     return _login_imageView;
 }

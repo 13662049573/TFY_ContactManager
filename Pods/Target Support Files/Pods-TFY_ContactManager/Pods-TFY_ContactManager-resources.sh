@@ -98,13 +98,13 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "${PODS_ROOT}/TFY_Navigation/TFY_Navigation/TFY_Navigation/TFY_NavigationImage.bundle"
   install_resource "${PODS_ROOT}/TFY_ProgressHUD/TFY_ProgressHUD/TFY_ProgressHUD/TFY_ProgressHUD.bundle"
-  install_resource "${PODS_ROOT}/TFY_ProgressHUD/TFY_ProgressHUD/TFY_ProgressHUD/TFY_PromptpopupHeader.h"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle"
+  install_resource "${PODS_ROOT}/TFY_Navigation/TFY_Navigation/TFY_Navigation/TFY_NavigationImage.bundle"
   install_resource "${PODS_ROOT}/TFY_ProgressHUD/TFY_ProgressHUD/TFY_ProgressHUD/TFY_ProgressHUD.bundle"
-  install_resource "${PODS_ROOT}/TFY_ProgressHUD/TFY_ProgressHUD/TFY_ProgressHUD/TFY_PromptpopupHeader.h"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

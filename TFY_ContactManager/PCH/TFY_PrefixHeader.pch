@@ -9,16 +9,16 @@
 #ifndef TFY_PrefixHeader_pch
 #define TFY_PrefixHeader_pch
 
-#import "TFY_ContactManagerKit.h"
-
 #import <AFNetworking.h>
 #import <IQKeyboardManager.h>
 #import <MJRefresh.h>
 #import <ReactiveObjC.h>
 #import <TFY_SimplifytableHeader.h>
 #import <TFY_Navigation.h>
-#import <TFY_ModelSqlite.h>
-#import <TFY_CategoryHerder.h>
+#import <TFY_ModelKit.h>
+#import <TFY_LayoutCategoryKit.h>
 #import <TFY_AutoLayout.h>
+
+#import "TFY_ContactManagerKit.h"
 
 #endif /* TFY_PrefixHeader_pch */

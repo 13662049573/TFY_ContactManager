@@ -44,11 +44,11 @@
 -(void)setModel:(TFY_PersonModel *)model{
     _model = model;
     
-    self.name_label.tfy_text(_model.fullName);
+    self.name_label.makeChain.text(_model.fullName);
     
     TFY_Phone *phone = _model.phones.firstObject;
     
-    self.phone_label.tfy_text(phone.phone);
+    self.phone_label.makeChain.text(phone.phone);
 }
 
 -(UIView *)back_View{
@@ -66,24 +66,31 @@
 
 -(UIImageView *)icon_imageView{
     if (!_icon_imageView) {
-        _icon_imageView = tfy_imageView();
-        _icon_imageView.tfy_imge(@"touxiang");
+        _icon_imageView = UIImageViewSet();
+        _icon_imageView.makeChain
+        .image([UIImage imageNamed:@"touxiang"]);
     }
     return _icon_imageView;
 }
 
 -(UILabel *)name_label{
     if (!_name_label) {
-        _name_label = tfy_label();
-        _name_label.tfy_textcolor(@"212121", 1).tfy_alignment(0).tfy_fontSize([UIFont systemFontOfSize:15]);
+        _name_label = UILabelSet();
+        _name_label.makeChain
+        .textColor([UIColor tfy_colorWithHex:@"212121"])
+        .textAlignment(NSTextAlignmentCenter)
+        .font([UIFont systemFontOfSize:15]);
     }
     return _name_label;
 }
 
 -(UILabel *)phone_label{
     if (!_phone_label) {
-        _phone_label = tfy_label();
-        _phone_label.tfy_textcolor(@"212121", 1).tfy_alignment(0).tfy_fontSize([UIFont systemFontOfSize:15]);
+        _phone_label = UILabelSet();
+        _phone_label.makeChain
+        .textColor([UIColor tfy_colorWithHex:@"212121"])
+        .textAlignment(NSTextAlignmentCenter)
+        .font([UIFont systemFontOfSize:15]);
     }
     return _phone_label;
 }

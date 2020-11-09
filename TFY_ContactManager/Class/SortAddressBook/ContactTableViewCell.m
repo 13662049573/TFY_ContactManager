@@ -7,7 +7,6 @@
 //
 
 #import "ContactTableViewCell.h"
-#import "TFY_ContactHeader.h"
 
 @interface ContactTableViewCell ()
 @property(nonatomic , strong)UIView *back_View;
@@ -44,11 +43,11 @@
     
     self.iconImageV.image = _model.image ? model.image : [[UIImage imageNamed:@"touxiang"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    self.nameLabel.tfy_text(_model.fullName);
+    self.nameLabel.makeChain.text(_model.fullName);
     
     TFY_Phone *phone = _model.phones.firstObject;
     
-    self.phoneNumLabel.tfy_text(phone.phone);
+    self.phoneNumLabel.makeChain.text(phone.phone);
 }
 
 -(UIView *)back_View{
@@ -66,24 +65,29 @@
 
 -(UIImageView *)iconImageV{
     if (!_iconImageV) {
-        _iconImageV = tfy_imageView();
-        _iconImageV.tfy_cornerRadius(25);
+        _iconImageV = UIImageViewSet();
+        _iconImageV.makeChain.cornerRadius(25);
     }
     return _iconImageV;
 }
 
 -(UILabel *)nameLabel{
     if (!_nameLabel) {
-        _nameLabel = tfy_label();
-        _nameLabel.tfy_textcolor(@"212121", 1).tfy_alignment(0).tfy_fontSize([UIFont systemFontOfSize:15]);
+        _nameLabel = UILabelSet();
+        _nameLabel.makeChain.textColor([UIColor tfy_colorWithHex:@"212121"])
+        .textAlignment(NSTextAlignmentCenter)
+        .font([UIFont systemFontOfSize:15]);
     }
     return _nameLabel;
 }
 
 -(UILabel *)phoneNumLabel{
     if (!_phoneNumLabel) {
-        _phoneNumLabel = tfy_label();
-        _phoneNumLabel.tfy_textcolor(@"212121", 1).tfy_fontSize([UIFont systemFontOfSize:14]).tfy_alignment(0);
+        _phoneNumLabel = UILabelSet();
+        _phoneNumLabel.makeChain
+        .textColor([UIColor tfy_colorWithHex:@"212121"])
+        .font([UIFont systemFontOfSize:14])
+        .textAlignment(NSTextAlignmentCenter);
     }
     return _phoneNumLabel;
 }

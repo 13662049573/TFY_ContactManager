@@ -1,4 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-TFY_ContactManager/Pods-TFY_ContactManager-resources.sh
 ${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_ROOT}/TFY_Navigation/TFY_Navigation/TFY_Navigation/TFY_NavigationImage.bundle
 ${PODS_ROOT}/TFY_ProgressHUD/TFY_ProgressHUD/TFY_ProgressHUD/TFY_ProgressHUD.bundle
-${PODS_ROOT}/TFY_ProgressHUD/TFY_ProgressHUD/TFY_ProgressHUD/TFY_PromptpopupHeader.h

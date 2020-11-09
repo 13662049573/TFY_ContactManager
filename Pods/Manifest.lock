@@ -17,36 +17,69 @@ PODS:
   - IQKeyboardManager (6.5.6)
   - MJRefresh (3.5.0)
   - ReactiveObjC (3.1.1)
-  - SDWebImage (5.9.0):
-    - SDWebImage/Core (= 5.9.0)
-  - SDWebImage/Core (5.9.0)
-  - TFY_AutoLayout (2.6.2):
-    - TFY_AutoLayout/IOS_Layout (= 2.6.2)
-    - TFY_AutoLayout/MAC_Layout (= 2.6.2)
-    - TFY_AutoLayout/Util (= 2.6.2)
-  - TFY_AutoLayout/IOS_Layout (2.6.2):
+  - SDWebImage (5.9.4):
+    - SDWebImage/Core (= 5.9.4)
+  - SDWebImage/Core (5.9.4)
+  - TFY_AutoLayout (2.6.4):
+    - TFY_AutoLayout/IOS_Layout (= 2.6.4)
+    - TFY_AutoLayout/MAC_Layout (= 2.6.4)
+    - TFY_AutoLayout/Util (= 2.6.4)
+  - TFY_AutoLayout/IOS_Layout (2.6.4):
     - TFY_AutoLayout/Util
-  - TFY_AutoLayout/MAC_Layout (2.6.2):
+  - TFY_AutoLayout/MAC_Layout (2.6.4):
     - TFY_AutoLayout/Util
-  - TFY_AutoLayout/Util (2.6.2)
-  - TFY_Category (3.5.8):
-    - TFY_Category/TFY_Foundation (= 3.5.8)
-    - TFY_Category/TFY_ITools (= 3.5.8)
-    - TFY_Category/TFY_UI (= 3.5.8)
-  - TFY_Category/TFY_Foundation (3.5.8)
-  - TFY_Category/TFY_ITools (3.5.8)
-  - TFY_Category/TFY_UI (3.5.8)
-  - TFY_Model (2.7.4)
-  - TFY_Navigation (2.4.2):
-    - TFY_Navigation/TFY_NavControoler (= 2.4.2)
-    - TFY_Navigation/TFY_PageController (= 2.4.2)
-    - TFY_Navigation/TFY_PopController (= 2.4.2)
-  - TFY_Navigation/TFY_NavControoler (2.4.2):
-    - TFY_Navigation/TFY_PopController
-  - TFY_Navigation/TFY_PageController (2.4.2)
-  - TFY_Navigation/TFY_PopController (2.4.2)
-  - TFY_ProgressHUD (2.4.0)
-  - TFY_SimplifytableViewKit (2.1.8)
+  - TFY_AutoLayout/Util (2.6.4)
+  - TFY_LayoutCategoryKit (1.6.8):
+    - TFY_LayoutCategoryKit/TFY_Categories (= 1.6.8)
+    - TFY_LayoutCategoryKit/TFY_Chain (= 1.6.8)
+    - TFY_LayoutCategoryKit/TFY_Tools (= 1.6.8)
+  - TFY_LayoutCategoryKit/TFY_Categories (1.6.8):
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation (= 1.6.8)
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI (= 1.6.8)
+    - TFY_LayoutCategoryKit/TFY_Tools
+  - TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation (1.6.8):
+    - TFY_LayoutCategoryKit/TFY_Tools
+  - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI (1.6.8):
+    - TFY_LayoutCategoryKit/TFY_Tools
+  - TFY_LayoutCategoryKit/TFY_Chain (1.6.8):
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer (= 1.6.8)
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase (= 1.6.8)
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture (= 1.6.8)
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView (= 1.6.8)
+  - TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer (1.6.8):
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase
+  - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase (1.6.8)
+  - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture (1.6.8):
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase
+  - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIView (1.6.8):
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_Foundation
+    - TFY_LayoutCategoryKit/TFY_Categories/TFY_UI
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_CALayer
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_ChainBase
+    - TFY_LayoutCategoryKit/TFY_Chain/TFY_UIGesture
+  - TFY_LayoutCategoryKit/TFY_Tools (1.6.8)
+  - TFY_Model (2.7.8)
+  - TFY_Navigation (2.6.4):
+    - TFY_Navigation/TFY_NavControoler (= 2.6.4)
+    - TFY_Navigation/TFY_PageController (= 2.6.4)
+  - TFY_Navigation/TFY_NavControoler (2.6.4):
+    - TFY_Navigation/TFY_NavControoler/TFY_Category (= 2.6.4)
+    - TFY_Navigation/TFY_NavControoler/TFY_Configure (= 2.6.4)
+    - TFY_Navigation/TFY_NavControoler/TFY_NavBasVcKit (= 2.6.4)
+    - TFY_Navigation/TFY_NavControoler/TFY_NavigationKit (= 2.6.4)
+  - TFY_Navigation/TFY_NavControoler/TFY_Category (2.6.4):
+    - TFY_Navigation/TFY_NavControoler/TFY_Configure
+  - TFY_Navigation/TFY_NavControoler/TFY_Configure (2.6.4)
+  - TFY_Navigation/TFY_NavControoler/TFY_NavBasVcKit (2.6.4):
+    - TFY_Navigation/TFY_NavControoler/TFY_Category
+    - TFY_Navigation/TFY_NavControoler/TFY_Configure
+  - TFY_Navigation/TFY_NavControoler/TFY_NavigationKit (2.6.4):
+    - TFY_Navigation/TFY_NavControoler/TFY_Configure
+  - TFY_Navigation/TFY_PageController (2.6.4)
+  - TFY_ProgressHUD (2.4.4)
+  - TFY_SimplifytableViewKit (2.2.2)
 
 DEPENDENCIES:
   - AFNetworking
@@ -55,7 +88,7 @@ DEPENDENCIES:
   - ReactiveObjC
   - SDWebImage
   - TFY_AutoLayout
-  - TFY_Category
+  - TFY_LayoutCategoryKit
   - TFY_Model
   - TFY_Navigation
   - TFY_ProgressHUD
@@ -69,7 +102,7 @@ SPEC REPOS:
     - ReactiveObjC
     - SDWebImage
     - TFY_AutoLayout
-    - TFY_Category
+    - TFY_LayoutCategoryKit
     - TFY_Model
     - TFY_Navigation
     - TFY_ProgressHUD
@@ -80,14 +113,14 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
-  TFY_AutoLayout: 03085c3744020215142df50ee24e9629eb967779
-  TFY_Category: 66b5edffd845518edf3fddab3a7caed993f70160
-  TFY_Model: 53314bb37e6f9d1b82c31eb316d0117ca67b376c
-  TFY_Navigation: 2c65cf8eb138a48af7b615f7f3ee0f71d2b8c83f
-  TFY_ProgressHUD: c50d5c947d185b30038c746eaae5c34e10564eb1
-  TFY_SimplifytableViewKit: 89e6d40925eae80ca5ee9a2fb129bd584c86c72f
+  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+  TFY_AutoLayout: 51019bdcdb78b9a145bd0ed351d23be93379dc0b
+  TFY_LayoutCategoryKit: 1114d02981a898cfce539698236702bef66d33ee
+  TFY_Model: 917e718160f250d52ce31f9f7f4e0a03dd6a37c1
+  TFY_Navigation: 9d9bf5a9ced9d7be01a8b99d63066b12731351cb
+  TFY_ProgressHUD: 56e59fdf0f932267246a5d0fe316d6511684f0a4
+  TFY_SimplifytableViewKit: 4cff3a69e4edc89151cfc5d4ba03574400b54189
 
-PODFILE CHECKSUM: f732cd17460dcb245efd547a4616edf391b87298
+PODFILE CHECKSUM: e16c0f6bc9e0a7603634935a6ee3f25b77a5bbc5
 
-COCOAPODS: 1.10.0.beta.2
+COCOAPODS: 1.10.0

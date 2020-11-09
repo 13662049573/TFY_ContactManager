@@ -37,24 +37,38 @@
 
 -(UIButton *)button{
     if (!_button) {
-        _button = tfy_button();
-        _button.tfy_title(@"选择指定人",UIControlStateNormal, @"3D4453",UIControlStateNormal, [UIFont systemFontOfSize:16]).tfy_action(self, @selector(btnClick),UIControlEventTouchUpInside).tfy_backgroundColor(@"FAE158", 1).tfy_cornerRadius(10);
+        _button = UIButtonSet();
+        _button.makeChain
+        .text(@"选择指定人", UIControlStateNormal)
+        .textColor([UIColor tfy_colorWithHex:@"3D4453"], UIControlStateNormal)
+        .font([UIFont systemFontOfSize:16])
+        .addTarget(self, @selector(btnClick), UIControlEventTouchUpInside)
+        .backgroundColor([UIColor tfy_colorWithHex:@"FAE158"])
+        .cornerRadius(10);
     }
     return _button;
 }
 
 -(UILabel *)name_label{
     if (!_name_label) {
-        _name_label = tfy_label();
-        _name_label.tfy_textcolor(@"3D4453", 1).tfy_fontSize([UIFont systemFontOfSize:14]).tfy_alignment(1).tfy_borders(1, @"5395DB");
+        _name_label = UILabelSet();
+        _name_label.makeChain
+        .textColor([UIColor tfy_colorWithHex:@"3D4453"])
+        .font([UIFont systemFontOfSize:14])
+        .textAlignment(NSTextAlignmentLeft)
+        .border(1, [UIColor tfy_colorWithHex:@"5395DB"]);
     }
     return _name_label;
 }
 
 -(UILabel *)phone_label{
     if (!_phone_label) {
-        _phone_label = tfy_label();
-        _phone_label.tfy_textcolor(@"3D4453", 1).tfy_fontSize([UIFont systemFontOfSize:14]).tfy_alignment(1).tfy_borders(1, @"5395DB");
+        _phone_label = UILabelSet();
+        _phone_label.makeChain
+        .textColor([UIColor tfy_colorWithHex:@"3D4453"])
+        .font([UIFont systemFontOfSize:14])
+        .textAlignment(NSTextAlignmentLeft)
+        .border(1, [UIColor tfy_colorWithHex:@"5395DB"]);
     }
     return _phone_label;
 }
@@ -62,9 +76,9 @@
 -(void)btnClick{
     [[TFY_ContactManager sharedInstance] selectContactAtController:self complection:^(NSString * _Nonnull name, NSString * _Nonnull phone) {
         
-        self.name_label.tfy_text([NSString stringWithFormat:@"姓名:%@",name]);
+        self.name_label.makeChain.text([NSString stringWithFormat:@"姓名:%@",name]);
         
-        self.phone_label.tfy_text([NSString stringWithFormat:@"电话:%@",phone]);
+        self.phone_label.makeChain.text([NSString stringWithFormat:@"电话:%@",phone]);
     }];
 }
 @end
